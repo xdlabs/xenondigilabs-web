@@ -45,12 +45,12 @@ else{
 		X('.page-wrapper .pageLinks ul').css({'list-style':'none', 'padding':'0px', 'margin':'0px'});
 		X('.page-wrapper .pageLinks li').css({'margin':parseInt(_H/45)+'px 0px', 'font-size':parseInt(_H/50)+'px', 'font-weight':'300','color':'#109eff', 'cursor':'pointer'});
 		X('.page-wrapper .pageLinks li a').css({'color':'#109eff', 'text-decoration':'none'});
-		
+
 		X('.page .page-section').css({'padding':parseInt(_W/90)+'px 0px', 'margin-bottom':parseInt(_W/30)+'px'});
 		X('.page .page-section-separator').css({'margin-bottom':parseInt(_W/30)+'px', 'width':'100%'});
 		X('.page .page-section h1').css({'text-transform':'uppercase', 'font-weight':'100', 'color':'#000'});
 		X('.page .page-section h1.quote').css({'text-align':'justify'});
-		X('.page .page-section p').css({'color':'#555', 'text-align':'justify'});
+		X('.page .page-section p').css({'color':'#555', 'text-align':'justify', 'line-height':'40px', 'padding':'35px 0px;'});
 		X('.page .page-section h1').css({'font-size':'36pt'});
 		X('.page .page-section h1.quote').css({'font-size':'30pt'});
 		X('.page .page-section p').css({'font-size':'14pt'});
@@ -63,7 +63,7 @@ else{
 			X('.team-members .team-member').css({'width':'22%', 'margin':'5% 5.5%', 'float':'left'});
 		}
 	}
-	
+
 	X(document).ready(function(){
 		responsiveStylesheet();
 		repeatResponsiveStylesheet();
