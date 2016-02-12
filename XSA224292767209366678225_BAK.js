@@ -207,7 +207,7 @@ else{
 			X('#landing-page #bottom-sliders .slider .slider-section .slider-section-image img').css({'height':parseInt((_W/5)/3)+'px','transform':'skewX(20deg)','margin-left':'-'+(_W/50)+'px'});
 			X('#landing-page #bottom-sliders .slider .slider-section .slider-section-text').css({'float':'left','width':'50%','padding':'5%'});
 			X('#landing-page #bottom-sliders .slider .slider-section .slider-section-text b').css({'font-size':parseInt(_H/55)+'px','color':'#000', 'font-weight':'600'});
-			X('#landing-page #bottom-sliders .slider .slider-section .slider-section-text p').css({'font-style':'italic', 'font-size':parseInt(_H/65)+'px','line-height':parseInt(_H/65)+'px', 'font-weight':'300'});
+			X('#landing-page #bottom-sliders .slider .slider-section .slider-section-text p').css({'font-size':parseInt(_H/65)+'px','line-height':parseInt(_H/65)+'px', 'font-weight':'400'});
 			X('#landing-page #branding-text-area').css({'position':'absolute','top':parseInt(3/4*_H)+'px','left':'0px','width':_W+'px','height':parseInt(_H/4)+'px','text-align':'center'});
 			X('#landing-page #branding-text-area #brand-name').css({'font-size':parseInt(_H/12-2)+'px', 'font-weight':'300', 'border-top':'1px #eee solid', 'border-bottom':'1px #eee solid', 'background':"url('trans-fff.png')", 'color':'#000'});
 			X('#landing-page #branding-text-area #brand-tagline').css({'color':'#666','font-size':parseInt(_H/40)+'px', 'font-weight':'100'});
