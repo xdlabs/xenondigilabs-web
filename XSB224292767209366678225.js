@@ -131,8 +131,8 @@ stack.config(function($routeProvider, $locationProvider) {
 		}).when('/education', {
 			templateUrl : 'education.html',
 			controller  : 'contactStack'
-		}).when('/startups', {
-			templateUrl : 'startups.html',
+		}).when('/research', {
+			templateUrl : 'research.html',
 			controller  : 'contactStack'
 		}).otherwise({
 			redirectTo : '/about-xenonstack'
