@@ -79,6 +79,98 @@
                 a.setAttribute('type', 'text/javascript');
                 document.getElementsByTagName('body')[0].appendChild(a);
                 a.addEventListener("load", function(event){
+
+                  stack = angular.module('the-stack', ['ngRoute']);
+
+                  stack.config(function($routeProvider, $locationProvider) {
+                  	$routeProvider
+                  		.when('/about-xenonstack', {
+                  			templateUrl : 'about-xenonstack.html',
+                  			controller  : 'aboutStack'
+                  		}).when('/xenonify', {
+                  			templateUrl : 'xenonify.html',
+                  			controller  : 'xenonThingStack'
+                  		}).when('/akira-stack', {
+                  			templateUrl : 'akira-stack.html',
+                  			controller  : 'akiraStack'
+                  		}).when('/raycare', {
+                  			templateUrl : 'raycare.html',
+                  			controller  : 'etlStack'
+                  		}).when('/xenon-stack', {
+                  			templateUrl : 'xenon-stack.html',
+                  			controller  : 'monitorStack'
+                  		}).when('/dev-ops-stack', {
+                  			templateUrl : 'dev-ops-stack.html',
+                  			controller  : 'devopsStack'
+                  		}).when('/cloud-factory', {
+                  			templateUrl : 'cloud-factory.html',
+                  			controller  : 'cloudStack'
+                  		}).when('/portfolio', {
+                  			templateUrl : 'portfolio.html',
+                  			controller  : 'portfolioStack'
+                  		}).when('/blog', {
+                  			templateUrl : 'blog.html',
+                  			controller  : 'blogStack'
+                  		}).when('/contact-us', {
+                  			templateUrl : 'contact-us.html',
+                  			controller  : 'contactStack'
+                  		}).when('/products', {
+                  			templateUrl : 'products.html',
+                  			controller  : 'contactStack'
+                  		}).when('/solutions', {
+                  			templateUrl : 'solutions.html',
+                  			controller  : 'contactStack'
+                  		}).when('/education', {
+                  			templateUrl : 'education.html',
+                  			controller  : 'contactStack'
+                  		}).when('/research', {
+                  			templateUrl : 'research.html',
+                  			controller  : 'contactStack'
+                  		}).otherwise({
+                  			redirectTo : '/about-xenonstack'
+                  		});
+                  });
+
+                  stack.controller('aboutStack', function($scope){
+                  	document.getElementsByTagName('li')[0].setAttribute('class', 'active');
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('xenonThingStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('akiraStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('etlStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('monitorStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('devopsStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('cloudStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('portfolioStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('blogStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
+
+                  stack.controller('contactStack', function($scope){
+                  	repeatResponsiveStylesheet();
+                  });
                     p = document.createElement('script');
                     p.setAttribute('src','jquery.min.js');
                     p.setAttribute('type', 'text/javascript');
